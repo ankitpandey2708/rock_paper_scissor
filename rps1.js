@@ -16,7 +16,7 @@ function playGame() {
     for (let i = 0; i < 5; i++) {
         let userInput;
         while (!['rock', 'paper', 'scissor'].includes(userInput)) {
-            userInput = prompt("Please enter rock, paper, or scissor:").toLowerCase();
+            userInput = prompt("Round "+ (i+1) +"\n\nPlease enter rock, paper, or scissor:").toLowerCase();
         }
 
         let computerInput = ['rock', 'paper', 'scissor'][Math.floor(Math.random() * 3)];
